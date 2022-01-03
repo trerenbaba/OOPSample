@@ -21,7 +21,7 @@ namespace OOPSample.Models
         public List<InvoiceItem> _items = new List<InvoiceItem>();
         // list item readolny olarak işaretleyip sadece bu alanın get edibileceğinii söylemiş olduk.
 
-        public IReadOnlyList<InvoiceItem> Items { get; set; }
+        public IReadOnlyList<InvoiceItem> Items => _items;
 
         //
         //yukarıdaki kod aynı kod.
