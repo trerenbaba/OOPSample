@@ -23,7 +23,7 @@ namespace OOPSample.Services
         }
         public bool LookUp(string taxNumber)
         {
-            throw new NotImplementedException();
+            return _taxNumber.Any(x => x == taxNumber);
         }
     }
 }
